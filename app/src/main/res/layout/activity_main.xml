@@ -7,32 +7,51 @@
     tools:context="alumno.ipn.cecyt9.examen_primer_parcial_yazmn_altamirano.MainActivity">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="83dp">
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="110dp"
             android:ems="10"
             android:hint="Usuario"
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/pass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/editText"
-            android:layout_below="@+id/editText"
+            android:layout_alignStart="@+id/user"
+            android:layout_below="@+id/user"
             android:layout_marginTop="28dp"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/ingresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="112dp"
+            android:onClick="validacion"
+            android:text="Ingresar" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:text="Inicio de Sesión" />
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

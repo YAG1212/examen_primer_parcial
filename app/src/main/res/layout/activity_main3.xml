@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="alumno.ipn.cecyt9.examen_primer_parcial_yazmn_altamirano.Main3Activity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="401dp"
+        android:layout_height="254dp"
+        app:srcCompat="@drawable/error"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="95dp" />
+</android.support.constraint.ConstraintLayout>

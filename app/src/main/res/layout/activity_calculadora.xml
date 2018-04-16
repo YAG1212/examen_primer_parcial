@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/boton1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.calculadora.MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:orientation="vertical"
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="Numero 1"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/text2"
+        app:layout_constraintEnd_toStartOf="@+id/num1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <TextView
+        android:orientation="vertical"
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="115dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="116dp"
+        android:text="Numero 2"
+        app:layout_constraintBottom_toBottomOf="@+id/restar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:orientation="vertical"
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:visibility="visible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/sumar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="13dp"
+        android:onClick="suma"
+        android:orientation="vertical"
+        android:text="Sumar"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/multiplicar"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="@+id/multiplicar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432" />
+
+    <Button
+        android:id="@+id/restar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:onClick="resta"
+        android:orientation="vertical"
+        android:text="Restar"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.429" />
+
+    <Button
+        android:id="@+id/multiplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:onClick="multi"
+        android:orientation="vertical"
+        android:text="Multiplicar"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/raiz"
+        app:layout_constraintTop_toBottomOf="@+id/sumar"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/dividir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="77dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="21dp"
+        android:onClick="divide"
+        android:orientation="vertical"
+        android:text="Dividir"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/multiplicar"
+        app:layout_constraintTop_toBottomOf="@+id/restar" />
+
+    <Button
+        android:id="@+id/raiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="raiz"
+        android:text="raiz cuadrada"
+        app:layout_constraintBottom_toTopOf="@+id/text2"
+        app:layout_constraintTop_toBottomOf="@+id/multiplicar"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/seno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="77dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="10dp"
+        android:onClick="seno"
+        android:text="seno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/raiz"
+        app:layout_constraintTop_toBottomOf="@+id/dividir" />
+
+    <Button
+        android:id="@+id/coseno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:layout_marginTop="16dp"
+        android:onClick="coseno"
+        android:text="coseno"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tangente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raiz"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/tangente"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="13dp"
+        android:onClick="tangente"
+        android:text="tangente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/coseno"
+        app:layout_constraintTop_toBottomOf="@+id/seno" />
+
+
+</android.support.constraint.ConstraintLayout>

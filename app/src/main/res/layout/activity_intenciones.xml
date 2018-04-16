@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="alumno.ipn.cecyt9.examen_primer_parcial_yazmn_altamirano.intenciones">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonNavegador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="abrirPaginaWeb"
+        android:text="Abrir página Web"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <Button
+        android:id="@+id/buttonLlamada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonNavegador"
+        android:layout_centerHorizontal="true"
+        android:onClick="llamadaTelefono"
+        android:text="Realizar llamada"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="142dp" />
+
+    <Button
+        android:id="@+id/buttonMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLlamada"
+        android:layout_centerHorizontal="true"
+        android:onClick="googleMaps"
+        android:text="Abrir Google Maps"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <Button
+        android:id="@+id/buttonFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonMaps"
+        android:layout_centerHorizontal="true"
+        android:onClick="tomarFoto"
+        android:text="Tomar Foto"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="286dp" />
+
+    <Button
+        android:id="@+id/buttonEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonFoto"
+        android:layout_centerHorizontal="true"
+        android:onClick="mandarCorreo"
+        android:text="Mandar E-mail"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <Button
+        android:id="@+id/buttonStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="StreetView"
+        android:text="StreetView" />
+
+</RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+

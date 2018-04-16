@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".menu" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Actividad2" />
+        <activity android:name=".calculadora" />
+        <activity android:name=".intenciones" />
+        <activity android:name=".animal" />
+        <activity android:name=".Main3Activity"></activity>
     </application>
 
 </manifest>
